@@ -4,12 +4,14 @@
   "description": "WEbsite for a co-working environment",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Austin C",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^4.20.2"
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1"
   }
 }
