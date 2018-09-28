@@ -12,15 +12,11 @@ $neutralblue: #374a60;
 $neutralpuce: #68737e;
 $funteal: #6e9995;
 $funpink: #ef3c79;
-
 $western-font: 'Monoton', cursive;
-
 $playful-font: 'Yellowtail', cursive;
-
 $mobile-width: 767px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
-
 
 $theme1: (
 bg-color: $pastelviolet,
@@ -36,7 +32,6 @@ $theme3: (
 bg-color: $darkmagenta,
 font-color: $funteal
 );
-
 
 @mixin colorswatch($theme){
   color: map-get($theme, font-color);
@@ -62,21 +57,24 @@ font-color: $funteal
 }
 
 body {
-  font-size: 16px;;
-}
-
-* {
   padding: 1px;
   margin: 1px;
   border: 1px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   @include mobile {
-    font-size: 1rem;
+    min-width: 350px;
+    font-size: .75rem;
+    background-image: url(../assets/images/room3-500.png);
   }
   @include tablet {
-    font-size: 1.4rem;
+    font-size: 1.5em;
+    background-image: url(../assets/images/room3-1000.png);
   }
   @include desktop {
     font-size: 1.75rem;
+    background-image: url(../assets/images/room3-2000.png);
   }
 }
 
@@ -106,16 +104,13 @@ h1 {
     height: 60vh;;
     margin: 1;
   }
-
   .wrapper {
     flex: 1;
   }
-
   .header {
     text-align: center;
     @include colorswatch($theme1);
     }
-
   .content-link {
     width: 350px;
     margin: auto;
@@ -130,8 +125,8 @@ h1 {
   flex-direction: row;
   flex: space-around;
   width: auto;
-  max-height: 100px;
-  margin-bottom:10px;
+  max-height: 150px;
+  padding-bottom: 5px;
   @include colorswatch($theme2);
   div {
     width: 33%;
