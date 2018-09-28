@@ -74,7 +74,6 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-    inject: 'body',
     template: './src/tour.html',
     filename: 'tour.html',
     minify: {
@@ -84,7 +83,6 @@ module.exports = {
   }),
 
   new HtmlWebpackPlugin({
-    inject: 'body',
     template: './src/contact.html',
     filename: 'contact.html',
     minify: {
@@ -94,7 +92,6 @@ module.exports = {
   }),
 
   new HtmlWebpackPlugin({
-    inject: 'body',
     template: './src/about.html',
     filename: 'about.html',
     minify: {
