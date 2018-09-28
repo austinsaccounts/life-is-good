@@ -73,3 +73,7 @@ mobile user interface
 
 *Austin C
 Copyright (c) 2018 { List of Contributors }*
+
+Additonial gits repositories used but abandoned include
+https://github.com/austinsaccounts/cowork-startup/commits/themes
+https://github.com/austinsaccounts/cowork-startup/tree/master/sketch
