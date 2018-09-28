@@ -1,8 +1,7 @@
 {
   "name": "finalsot",
   "version": "1.0.0",
-  "description": "",
-  "main": "webpack.config.js",
+  "main": "index.js",
   "dependencies": {
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",
@@ -16,7 +15,12 @@
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "fsevents": "*",
+    "materialize-css": "^1.0.0",
+    "materialize-loader": "^3.0.0",
+    "webpack-dev-server": "^3.1.9"
+  },
   "scripts": {
     "build": "webpack --mode development",
     "start": "webpack-dev-server --mode development --open",
@@ -24,5 +28,6 @@
   },
   "keywords": [],
   "author": "Austin C",
-  "license": "ISC"
+  "license": "ISC",
+  "description": ""
 }
