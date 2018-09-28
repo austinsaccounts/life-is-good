@@ -62,7 +62,7 @@ mobile user interface
 
 *Technologies*
   Sketch, Figma, Npm and dependencies listed in [package.json]
-  html/css/scss/js/jquery
+  html/css/scss/js/jquery googlefonts
 
 *"bugs"*
 **"if you recieve a fsevents related message try**

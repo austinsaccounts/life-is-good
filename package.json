@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "fsevents": "*",
+    "google-fonts-webpack-plugin": "^0.4.4",
     "materialize-css": "^1.0.0",
     "materialize-loader": "^3.0.0",
     "webpack-dev-server": "^3.1.9"
