@@ -1,3 +1,140 @@
+$darkmagenta: #853752;
+$pastelviolet: #cc8fa9;
+$pastelpink: #e095a2;
+$offwhite: #dedce9;
+$neutralbrown: #5a2d17;
+$neutralgreen: #314124;
+$neutralsienna: #67311a;
+$pastelplum: #54406d;
+$offblack: #080c0f;
+$darkblue: #0f273b;
+$neutralblue: #374a60;
+$neutralpuce: #68737e;
+$funteal: #6e9995;
+$funpink: #ef3c79;
+
+$western-font: 'Monoton', cursive;
+
+$playful-font: 'Yellowtail', cursive;
+
+$mobile-width: 767px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+
+$theme1: (
+bg-color: $pastelviolet,
+font-color: $funteal
+);
+
+$theme2: (
+bg-color: $funteal,
+font-color: $offblack
+);
+
+$theme3: (
+bg-color: $darkmagenta,
+font-color: $funteal
+);
+
+
+@mixin colorswatch($theme){
+  color: map-get($theme, font-color);
+  background-color:  map-get($theme, bg-color);
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$mobile-width +1px}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
 body {
-  background-color: green;
+  font-size: 16px;;
+}
+
+* {
+  padding: 1px;
+  margin: 1px;
+  border: 1px;
+  @include mobile {
+    font-size: 1rem;
+  }
+  @include tablet {
+    font-size: 1.4rem;
+  }
+  @include desktop {
+    font-size: 1.75rem;
+  }
+}
+
+.master-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h1 {
+  color: inherit;
+}
+
+.header {
+  h1 {
+  font-family: $western-font;
+  }
+}
+
+
+#landing {
+  display: flex;
+  flex-direction: column;
+  // width: 100%;
+  height: 100%;
+  .main-area {
+    height: 60vh;;
+    margin: 1;
+  }
+
+  .wrapper {
+    flex: 1;
+  }
+
+  .header {
+    text-align: center;
+    @include colorswatch($theme1);
+    }
+
+  .content-link {
+    width: 350px;
+    margin: auto;
+    text-align: center;
+    @include colorswatch($theme3);
+  }
+}
+
+.footer-links  {
+  font-family: $western-font;
+  display: flex;
+  flex-direction: row;
+  flex: space-around;
+  width: auto;
+  max-height: 100px;
+  margin-bottom:10px;
+  @include colorswatch($theme2);
+  div {
+    width: 33%;
+    text-align: center;
+  }
 }

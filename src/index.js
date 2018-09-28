@@ -1,10 +1,9 @@
 import './css/styles.css';
 import './sass/styles.scss';
-// import $ from 'jquery';
+import $ from 'jquery';
 
-
-console.log("works");
 
 $(document).ready(function() {
+  console.log("jquery fired");
     event.preventDefault();
 });
