@@ -35,7 +35,7 @@ font-color: $funteal
 );
 
 
-@mixin colorswatch($theme){
+@mixin colorSwatch($theme){
   color: map-get($theme, font-color);
   background-color:  map-get($theme, bg-color);
 }
