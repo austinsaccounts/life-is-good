@@ -14,13 +14,11 @@
 **sketch**
 *-cowork-startup/src/sketch/*
 
-Screenshots of your Sketch wireframes should go here. Make sure to include all versions (if you have different mobile, tablet, desktop, etc.) designs. Use Dropbox or another free image hosting service to host your images.
-
-Desktop Version
-desktop user interface
-
-Mobile Version
-mobile user interface
+Screenshots
+  are located at
+  https://github.com/austinsaccounts/cowork-startup/commits/themes
+  https://github.com/austinsaccounts/cowork-startup/tree/master/sketch
+  and pencil can be found in the assets/images-1
 
 *User Stories*
   **"Amy Arts"
