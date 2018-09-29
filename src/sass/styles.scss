@@ -1,62 +1,65 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin+Sketch');
 
-$darkmagenta: #853752;
-$pastelviolet: #cc8fa9;
-$pastelpink: #e095a2;
-$offwhite: #dedce9;
-$neutralbrown: #5a2d17;
-$neutralgreen: #314124;
-$neutralsienna: #67311a;
-$pastelplum: #54406d;
-$offblack: #080c0f;
-$darkblue: #0f273b;
-$neutralblue: #374a60;
-$neutralpuce: #68737e;
-$funteal: #6e9995;
-$funpink: #ef3c79;
-$western-font: 'Cabin Sketch', cursive;
-$playful-font: 'Yellowtail', cursive;
-$mobile-width: 767px;
-$tablet-width: 768px;
-$desktop-width: 1024px;
+@import 'var-mix';
 
-$theme1: (
-bg-color: $pastelviolet,
-font-color: $funteal
-);
-
-$theme2: (
-bg-color: $funteal,
-font-color: $offblack
-);
-
-$theme3: (
-bg-color: $darkmagenta,
-font-color: $funteal
-);
-
-@mixin colorswatch($theme){
-  color: map-get($theme, font-color);
-  background-color:  map-get($theme, bg-color);
-}
-
-@mixin mobile {
-  @media (max-width: #{$mobile-width}) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media (min-width: #{$mobile-width +1px}) and (max-width: #{$desktop-width - 1px}) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (min-width: #{$desktop-width}) {
-    @content;
-  }
-}
+//
+// $darkmagenta: #853752;
+// $pastelviolet: #cc8fa9;
+// $pastelpink: #e095a2;
+// $offwhite: #dedce9;
+// $neutralbrown: #5a2d17;
+// $neutralgreen: #314124;
+// $neutralsienna: #67311a;
+// $pastelplum: #54406d;
+// $offblack: #080c0f;
+// $darkblue: #0f273b;
+// $neutralblue: #374a60;
+// $neutralpuce: #68737e;
+// $funteal: #6e9995;
+// $funpink: #ef3c79;
+// $western-font: 'Cabin Sketch', cursive;
+// $playful-font: 'Yellowtail', cursive;
+// $mobile-width: 767px;
+// $tablet-width: 768px;
+// $desktop-width: 1024px;
+//
+// $theme1: (
+// bg-color: $pastelviolet,
+// font-color: $funteal
+// );
+//
+// $theme2: (
+// bg-color: $darkblue,
+// font-color: $offblack
+// );
+//
+// $theme3: (
+// bg-color: $darkmagenta,
+// font-color: $funteal
+// );
+// 
+// @mixin colorswatch($theme){
+//   color: map-get($theme, font-color);
+//   background-color:  map-get($theme, bg-color);
+// }
+//
+// @mixin mobile {
+//   @media (max-width: #{$mobile-width}) {
+//     @content;
+//   }
+// }
+//
+// @mixin tablet {
+//   @media (min-width: #{$mobile-width +1px}) and (max-width: #{$desktop-width - 1px}) {
+//     @content;
+//   }
+// }
+//
+// @mixin desktop {
+//   @media (min-width: #{$desktop-width}) {
+//     @content;
+//   }
+// }
 
 body {
   padding: 1px;
@@ -65,6 +68,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-image: url(../assets/images/room3-500.png);
+  //setting the gneeric background image so hopefully on transitions there isnt a white flash
   @include mobile {
     min-width: 350px;
     font-size: .75rem;
@@ -117,6 +122,20 @@ h1 {
     text-align: center;
     @include colorswatch($theme3);
   }
+
+  .fluff {
+    width: 500px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    @include colorswatch($theme2);
+    opacity: .5;
+    border-radius: 50px;
+    font-size: .7em;
+    .fluff:hover{
+      opacity: 1;
+  }
+}
 }
 
 .footer-links  {
@@ -134,9 +153,6 @@ h1 {
     text-align: center;
   }
 }
-
-
-
 
 #slideshow-wrapper {
   width:100vw;
@@ -169,20 +185,20 @@ h1 {
   width: 90%;
   text-align: justify;
 }
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
+//
+// .fade {
+//   -webkit-animation-name: fade;
+//   -webkit-animation-duration: 1.5s;
+//   animation-name: fade;
+//   animation-duration: 1.5s;
+// }
+//
+// @-webkit-keyframes fade {
+//   from {opacity: .4}
+//   to {opacity: 1}
+// }
+//
+// @keyframes fade {
+//   from {opacity: .4}
+//   to {opacity: 1}
+// }
