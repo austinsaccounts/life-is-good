@@ -1,4 +1,3 @@
-
 var slideIndex = 0;
 
 function showSlides() {
@@ -13,7 +12,8 @@ function showSlides() {
     setTimeout(showSlides, 4000);
 }
 
-
 if (document.getElementsByClassName("mySlides").length > 0){
+  document.body.style.backgroundImage="none";
   showSlides();
 };
+//the previous is the carousel function
