@@ -14,6 +14,7 @@ function showSlides() {
 
 if (document.getElementsByClassName("mySlides").length > 0){
   document.body.style.backgroundImage="none";
+  document.body.style.backgroundColor="#5a2d17";
   showSlides();
 };
 //the previous is the carousel function
