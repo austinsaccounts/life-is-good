@@ -30,11 +30,11 @@ body {
   }
 }
 
-body.tour-page {
+body.tourPage {
   background-color: $neutralbrown;
 }
 
-.master-wrapper {
+.masterWrapper {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -60,7 +60,7 @@ h1 {
     text-align: center;
     @include colorswatch($theme1);
     }
-  .content-link {
+  .contentLink {
     width: 350px;
     margin: auto;
     text-align: center;
@@ -82,22 +82,7 @@ h1 {
 }
 }
 
-.footer-links  {
-  font-family: $western-font;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-  max-height: 150px;
-  min-height: 75px;
-  margin-bottom: 1px;
-  @include colorswatch($theme2);
-  div {
-    text-align: center;
-  }
-}
-
-#slideshow-wrapper {
+#slideShowWrapper {
   width:100vw;
   margin-top: 5px;
   margin-bottom: -10%;
@@ -108,7 +93,7 @@ h1 {
   justify-content: center;
 }
 
-.slideshow-holder {
+.slideShowHolder {
   display: flex;
   flex-flow: row;
   width: 100%;
