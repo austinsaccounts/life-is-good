@@ -60,6 +60,9 @@ mobile user interface
   Quotes "What I lack in experience I make up for with enthusiasm" Metrics/demographics and user type [jr developer, early 20's, dating, recent transplant] Goals and wants
   a fun place to work with other programmers and developers reasons In theory I could work from home, but sometimes I want to bounce ideas off of other programmers and ask for help when I need it. I'm also not yet ready to work solo.**
 
+*prospective users*
+**We seek artists, programmers, young and old of varying backgrounds**
+
 *Technologies*
   Sketch, Figma, Npm and dependencies listed in [package.json]
   html/css/scss/js/jquery googlefonts
