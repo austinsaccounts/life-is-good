@@ -8,6 +8,7 @@
   `$ cd~ '
   `$ git clone https://github.com/austinsaccounts/life-is-good.git`
   `$ cd finalsot`
+  `npm init -y`
   `npm install`
   `npm run start`
 
